@@ -1,6 +1,6 @@
 # `moon`
 
-Basic Haskell web framework for building applications.
+Basic Haskell web framework for building applications. (Fully qualified class names are used to enhance code clarity)
 
 It offers file and memory sessions, SQL (MySQL) database integration, and the most basic HTTP routing system.
 
