@@ -1,0 +1,10 @@
+dist/
+.stack-work/
+*.hi
+*.o
+*.dyn_o
+*.dyn_hi
+cabal.sandbox.config
+cabal-dev/
+cabal.project.local
+*~

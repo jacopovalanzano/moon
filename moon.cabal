@@ -1,0 +1,100 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           moon
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/jacopovalanzano/moon#readme>
+homepage:       https://github.com/jacopovalanzano/moon#readme
+bug-reports:    https://github.com/jacopovalanzano/moon/issues
+author:         Jacopo Valanzano
+maintainer:     jacopov@gmail.com
+copyright:      2025 Jacopo Valanzano
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/jacopovalanzano/moon
+
+library
+  exposed-modules:
+      Moon.Database.SQL
+      Moon.Routing.Router
+      Moon.Session.Handler
+      Moon.Session.SessionDriver
+  other-modules:
+      Paths_moon
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cereal
+    , containers
+    , cryptonite
+    , directory >=1.3
+    , filepath >=1.4
+    , mysql-simple
+    , network
+    , scotty
+    , stm
+    , text
+    , wai
+  default-language: Haskell2010
+
+executable myproject-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_moon
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cereal
+    , containers
+    , cryptonite
+    , directory >=1.3
+    , filepath >=1.4
+    , moon
+    , mysql-simple
+    , network
+    , scotty
+    , stm
+    , text
+    , wai
+  default-language: Haskell2010
+
+test-suite myproject-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_moon
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , cereal
+    , containers
+    , cryptonite
+    , directory >=1.3
+    , filepath >=1.4
+    , moon
+    , mysql-simple
+    , network
+    , scotty
+    , stm
+    , text
+    , wai
+  default-language: Haskell2010
