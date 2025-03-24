@@ -25,10 +25,3 @@ To run with Stack:
     $ stack run myproject-exe
 
 Visit `http://localhost:3000` to see the application.
-
-### Features
-
-- File and memory sessions
-```haskell
-    
-```
