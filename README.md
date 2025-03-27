@@ -8,6 +8,8 @@ It's not a full-fledged framework, but it should give you the basis for somethin
 
 The `Main.hs` file contains some example code.
 
+⚠️ The `Moon.Routing.Router.route` method can capture URL path parameters. In the moon framework, these parameters are not sanitized, which leaves the system vulnerable to malicious attacks, such as XSS injections.
+
 ### Installation
 
 First, enter the project directory:
