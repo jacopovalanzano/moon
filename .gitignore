@@ -1,5 +1,6 @@
 dist/
 .stack-work/
+stack.yaml.lock
 *.hi
 *.o
 *.dyn_o
